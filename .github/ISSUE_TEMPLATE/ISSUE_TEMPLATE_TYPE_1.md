@@ -1,1 +1,0 @@
-issue template type 1 입니다.
