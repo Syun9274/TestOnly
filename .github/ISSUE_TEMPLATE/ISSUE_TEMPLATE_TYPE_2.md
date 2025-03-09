@@ -1,0 +1,1 @@
+issue template type 2 입니다.
