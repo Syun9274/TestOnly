@@ -1,0 +1,45 @@
+name: Bug Report
+description: 버그가 발생했을 때 사용하세요.
+title: "[BUG] 버그 설명 요약"
+labels: ["bug", "urgent"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🚨 버그 리포트
+        문제가 발생한 경우 아래 내용을 작성해주세요.
+  - type: input
+    id: environment
+    attributes:
+      label: 실행 환경
+      description: "OS, 브라우저, 버전 등을 적어주세요."
+      placeholder: "예: Windows 10, Chrome 98"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 문제 설명
+      description: "버그가 발생한 내용을 자세히 설명해주세요."
+      placeholder: "예: 버그를 재현하는 방법을 적어주세요."
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 로그 (선택사항)
+      description: "관련 로그가 있다면 첨부해주세요."
+      render: shell
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 우선순위
+      description: "버그의 중요도를 선택하세요."
+      options:
+        - 🟢 낮음
+        - 🟡 보통
+        - 🔴 높음
+        - 🚨 긴급
+    validations:
+      required: true

@@ -1,1 +1,0 @@
-issue template 입니다.

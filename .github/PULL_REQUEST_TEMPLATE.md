@@ -1,1 +1,0 @@
-pull request template 입니다.
